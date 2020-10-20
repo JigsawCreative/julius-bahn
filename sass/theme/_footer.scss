@@ -1,0 +1,39 @@
+// FOOTER
+
+#wrapper-footer {
+  color: #ffffff;
+  font-size: 14px;
+  background-color: $grey;
+  padding: 60px 0px 30px;
+    a {
+      color: #ffffff;
+        :hover {
+          color: #ffffff;
+        }
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    .contact-details {
+      :hover {
+        text-decoration: none;
+      }
+      li {
+        padding: 4px 0px;
+      }
+    }
+    .social-links {
+      font-size: 1.4em;
+        :hover {
+          text-decoration: none;
+        }
+        li {
+          display: inline;
+          padding: 0px 8px;
+        }
+    }
+    .site-info {
+      font-size: 12px;
+    }
+}

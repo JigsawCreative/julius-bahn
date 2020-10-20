@@ -1,0 +1,59 @@
+// TYPOGRAPHY
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  color: $grey;
+}
+
+h1, h2, h3 {
+  //font-family: 'Libre Baskerville', serif;
+}
+
+h1 {
+  color: $green;
+  font-size: 2.8rem;
+  padding: 20px 0px;
+}
+
+h2 a:hover {
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+a {
+  color: $green;
+  font-weight: 400;
+  &:hover {
+    color: $green;
+  }
+}
+
+.breadcrumbs {
+  font-size: 13px;
+}
+
+blockquote.blockquote {
+  font-size: 15px;
+  margin: 0px;
+  font-style: italic;
+  .blockquote-footer {
+    margin-top: 4px;
+    font-style: normal;
+    cite {
+      font-style: normal;
+    }
+  }
+}
+#testimonial {
+  @media (max-width: 991px) {
+    margin-bottom: 30px;
+  }
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}

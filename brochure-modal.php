@@ -35,7 +35,7 @@
 		</div>
 		<div class="modal-footer">
 			<button type="button" class="btn" data-dismiss="modal">Close</button>
-			<a href="/request-a-brochure/" type="button" class="btn">Get Brochure</a>
+			<a href="/request-a-brochure/" class="btn">Get Brochure</a>
 		</div>
 		</div>
 	</div>

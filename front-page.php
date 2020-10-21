@@ -1,5 +1,8 @@
 <?php get_header(); ?>
 
+	<!-- New 2020 brochure modal -->
+	<?php get_template_part('brochure-modal'); ?>
+
 	<!-- Main Slider -->
 	<?php
 

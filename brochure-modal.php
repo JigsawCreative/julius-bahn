@@ -3,7 +3,7 @@
 	const $ = jQuery;
 
 	$(window).scroll(function(){        
-        if($(document).scrollTop() > 1000 && $('#brochureModal').attr('displayed') === 'false') {
+        if($(document).scrollTop() > 10 && $('#brochureModal').attr('displayed') === 'false') {
             console.log('scroll');
             $('#brochureModal').fadeIn(500);
             $('#brochureModal').attr('displayed', 'true');

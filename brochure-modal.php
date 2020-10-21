@@ -3,7 +3,7 @@
 	const $ = jQuery;
 
 	$(window).scroll(function(){        
-        if($(document).scrollTop() > 100 && $('#brochureModal').attr('displayed') === 'false') {
+        if($(document).scrollTop() > 1000 && $('#brochureModal').attr('displayed') === 'false') {
             console.log('scroll');
             $('#brochureModal').fadeIn(500);
             $('#brochureModal').attr('displayed', 'true');
@@ -24,7 +24,7 @@
 	<div class="modal-dialog bottom-right-fixed" role="document">
 		<div class="modal-content">
 		<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLongTitle">Get Our New 2020 Brochure</h5>
+			<h5 class="modal-title" id="exampleModalLongTitle">Get Our New 2021 Brochure</h5>
 			<a class="brochure-modal-close" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
 			</a>
@@ -43,7 +43,7 @@
             </div>
 		</div>
 		<div class="modal-footer">
-			<button class="btn close-text-btn">Close</button>
+			<a class="btn close-text-btn">Close</a>
 			<a href="/request-a-brochure/" class="btn">Get Brochure</a>
 		</div>
 		</div>

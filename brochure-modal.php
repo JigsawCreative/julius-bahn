@@ -25,9 +25,9 @@
 		<div class="modal-content">
 		<div class="modal-header">
 			<h5 class="modal-title" id="exampleModalLongTitle">Get Our New 2020 Brochure</h5>
-			<button type="button" class="brochure-modal-close" aria-label="Close">
+			<a class="brochure-modal-close" aria-label="Close">
 			<span aria-hidden="true">&times;</span>
-			</button>
+			</a>
 		</div>
 		<div class="modal-body brochure-details">
             <div class="brochure-20-image">
@@ -43,7 +43,7 @@
             </div>
 		</div>
 		<div class="modal-footer">
-			<button type="button" class="btn close-text-btn">Close</button>
+			<button class="btn close-text-btn">Close</button>
 			<a href="/request-a-brochure/" class="btn">Get Brochure</a>
 		</div>
 		</div>

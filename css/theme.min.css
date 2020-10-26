@@ -254,7 +254,8 @@
 	left: 2rem;
 	background: #B0BEBE;
 	border-top-left-radius: 1rem;
-	border-top-right-radius: 1rem;
+    border-top-right-radius: 1rem;
+    z-index: 9999;
 }
 
 .brochure-popup__container {

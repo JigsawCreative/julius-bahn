@@ -51,7 +51,7 @@
 								</div>
 								<div class="col-lg-6">
 									<?php $image_right = get_sub_field('image_right'); ?>
-                  <img class="p-5" src="<?php echo $image_right['url']; ?>" alt="<?php echo $image_right['alt']; ?>">
+                  					<img class="p-lg-5" src="<?php echo $image_right['url']; ?>" alt="<?php echo $image_right['alt']; ?>">
 								</div>
 						  </div>
 						</div>
@@ -84,7 +84,7 @@
 						  <div class="row">
 								<div class="col-lg-6">
 									<?php $image_left = get_sub_field('image_left'); ?>
-                  <img class="p-5" src="<?php echo $image_left['url']; ?>" alt="<?php echo $image_left['alt']; ?>">
+                  <img class="mb-3 p-lg-5" src="<?php echo $image_left['url']; ?>" alt="<?php echo $image_left['alt']; ?>">
 								</div>
 								<div class="col-lg-6 my-auto">
 									<?php // get group fields
@@ -115,7 +115,7 @@
 								</div>
 								<div class="col-lg-8">
 									<?php $image_right = get_sub_field('image_right'); ?>
-                  <img class="p-5" src="<?php echo $image_right['url']; ?>" alt="<?php echo $image_right['alt']; ?>">
+                  <img class="mobile-border p-lg-5" src="<?php echo $image_right['url']; ?>" alt="<?php echo $image_right['alt']; ?>">
 								</div>
 							</div>
 						</div>
@@ -128,7 +128,7 @@
 							<div class="row">
 								<div class="col-lg-8">
 									<?php $image_left = get_sub_field('image_left'); ?>
-                  <img class="p-5" src="<?php echo $image_left['url']; ?>" alt="<?php echo $image_left['alt']; ?>">
+                  <img class="p-lg-5" src="<?php echo $image_left['url']; ?>" alt="<?php echo $image_left['alt']; ?>">
 								</div>
 								<div class="col-lg-4 my-auto">
 									<?php // get group fields

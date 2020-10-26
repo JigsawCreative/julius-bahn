@@ -19,6 +19,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 <!-- Brochure Form & Contact Links -->
   <?php include(locate_template('cta-banner-links.php')); ?>
 
+<!-- New 2021 brochure popup -->
+<?php get_template_part('brochure-popup'); ?>  
+
 <footer class="wrapper" id="wrapper-footer">
 
 	<div class="container">

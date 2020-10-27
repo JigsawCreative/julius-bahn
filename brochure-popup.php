@@ -16,11 +16,17 @@ if ( ! defined( 'ABSPATH' ) ) {
 	const $ = jQuery;
 
 	$(window).scroll(function(){        
-        if($(document).scrollTop() > 10) {
+        if($(document).scrollTop() > 10 && $('.brochure-popup').attr('closed') === 'false') {
             console.log('scroll');
             $('.brochure-popup').fadeIn(500);
         }
      }); 
+
+     $(document).ready(function() {
+         $('.brochure-popup__close').click(function(){
+            $('.brochure-popup').fadeOut(500).attr('closed', 'true');
+         });
+     });
 	
 </script>
 
@@ -32,8 +38,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php if(!($host === 'request-a-brochure')) : ?>
 
-<div class="brochure-popup">
+<div class="brochure-popup" closed="false">
     <div class="brochure-popup__container">
+        <div class="brochure-popup__close"></div>
         <div class="brochure-popup__logo">
             <a href="/request-a-brochure/">
                 <img src="/wp-content/uploads/JB-logo-blk.png" alt="Julius Bahn Logo">    

@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <?php if(!($host === 'request-a-brochure')) : ?>
 
-<div class="brochure-popup" closed="false">
+<div class="brochure-popup">
     <div class="brochure-popup__container">
         <div class="brochure-popup__close"></div>
         <div class="brochure-popup__logo">

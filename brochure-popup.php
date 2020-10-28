@@ -13,6 +13,35 @@ if ( ! defined( 'ABSPATH' ) ) {
   $host = basename($fullUrl);
 ?>
 
+<script>
+
+    //Brochure popup logic
+    const $ = jQuery;
+
+     $(document).ready(function() {
+
+        //set popup session storage token
+        let sessionToken = window.sessionStorage;
+
+        $(window).scroll(function(){        
+            if($(document).scrollTop() > 10 && sessionToken.getItem('popupClosed') != 'true') {
+                $('.brochure-popup').fadeIn(500);
+            }
+        }); 
+
+        //if user is on brochure thank you page set session storage item to true
+        if (window.location.href.indexOf("brochure-thank-you") > -1) {
+        sessionToken.setItem('popupClosed', 'true');
+        }
+         $('.brochure-popup__close').click(function(){
+            $('.brochure-popup').fadeOut(500).attr('closed', 'true');
+            //set token popup closed when popup clicked
+            sessionToken.setItem('popupClosed', 'true');
+         });
+     });
+
+</script>
+
 <?php if(!($host === 'request-a-brochure')) : ?>
 
 <div class="brochure-popup">
